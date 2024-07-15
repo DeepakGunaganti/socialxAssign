@@ -1,5 +1,4 @@
 import HeaderTop from "@/app/Headertop.js/page"
-import Productslist from "@/app/Productslist";
 import Footer from "@/components/Footer"
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -7,6 +6,7 @@ import "./globals.css";
 import ProvideWrapper from "@/Redux/ProviderWrapper"
 import Navbar from "@/components/Navbar"
 import Link from "next/link";
+import Productslist from "./Productslist/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
