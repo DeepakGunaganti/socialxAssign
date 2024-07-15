@@ -107,7 +107,7 @@ const Payment = () => {
                     <div className='bg-white p-8 rounded shadow-md text-center'>
                         <Image src="/images/Group (1).png" alt="success image" width={500} height={300} />
                         <h2 className='text-2xl font-bold mb-4'>Order Placed Successfully!</h2>
-                        <p className='max-w-96 ml-16'>Your Order Has Been Placed Successfull We'll Try To Ship It To Your Door Step As Soon We Can. Cheers</p>
+                        <p className='max-w-96 ml-16'>Your Order Has Been Placed Successfull We will Try To Ship It To Your Door Step As Soon We Can. Cheers</p>
                         <div className='mt-4'>
                             <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' onClick={navigationtohome}>Continue Shopping</button>
                         </div>

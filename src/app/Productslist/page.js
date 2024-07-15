@@ -95,7 +95,7 @@ const Productslist = () => {
                 <div className="grid grid-cols-3 gap-20">
                     {products.map((product, index) => (
                         <div key={index} className="border h-96 w-80 p-14 text-center shadow-md">
-                            <button onClick={() => dispatch(addproduct(product))}> <img src={product.image} alt={product.title} className="w-96 h-64 object-fit rounded-lg" style={{ aspectRatio: '16/9' }} onClick={navigatetocart} /> </button>
+                            <button onClick={() => dispatch(addproduct(product))}> <img src={product.image} alt={product.title} className="w-96 h-64 object-fit rounded-lg" style={{ aspectRatio: '16/9' }} onClick={navigatetocart}  /> </button>
                             <div className=''>
                                 <p className="text-sm">{product.title}</p>
                                 <p className="text-sm"> price :-{product.price}</p>
