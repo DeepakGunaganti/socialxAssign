@@ -1,6 +1,12 @@
+import HeaderTop from "@/app/Headertop.js/page"
+import Productslist from "@/app/Productslist";
+import Footer from "@/components/Footer"
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ProvideWrapper from "@/Redux/ProviderWrapper"
+import Navbar from "@/components/Navbar"
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +22,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ProvideWrapper>
+         <Navbar/>
+        {/* <HeaderTop/> */}
+        {children}
+        {/* <Footer/> */}
+        
+          </ProvideWrapper>    
+         
+    
+        
+        </body>
     </html>
   );
 }
